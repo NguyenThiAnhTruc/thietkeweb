@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+            <meta charset="utf-8">
+            <title>Đăng ký nhận tin</title>
+</head>
+
+<body>
+  <h1>Đăng ký nhận tin</h1>
+  <form action="/dang-ky.php" method="post">
+    <fieldset>
+      <legend>Gửi thông tin của bạn cho chúng tôi</legend>
+      <p>Đăng ký để nhận được các thông tin định kì về giá nông sản</p>
+      <ol>
+        <li><label for="ho-ten">Tên:</label>
+          <input type="text" name="ten" id="ho-ten"></li>
+        <li><label for="email">Email:</label>
+          <input type="text" name="email" id="email"></li>
+      </ol>
+      <input type="submit" value="Đăng ký">
+    </fieldset>
+  </form>
+</body>
+</html>
+<hr>
+<p>Mục chọn kiểu trình đơn xổ</p>
+<p>Trong các quyển sách sau, bạn thích quyển nào nhất?
+
+    <select name="thich-nhat">
+      <option value=“khuyen-hoc”>Khuyến học</option>
+      <option>Đúng việc</option>
+      <option>Khởi hành</option>
+      <option>Trên đường băng</option>
+      <option>Nhà giả kim</option>
+    </select></p>
+<hr>
+<p>Mục chọn kiểu trình đơn cuộn</p>
+
+<p>Trong các quyển sách sau, bạn thích quyển nào?
+
+    <select name="thich-nhat" size="4" multiple>
+      <option>Khuyến học</option>
+      <option selected>Đúng việc</option>
+      <option selected>Khởi hành</option>
+      <option>Trên đường băng</option>
+      <option>Nhà giả kim</option>
+    </select></p>
+<hr>
+<p>Phân nhóm các mục chọn</p>
+<p>Trong các quyển sách sau, bạn thích quyển nào?
+
+      <select name="thich-nhat" size="7" multiple>
+        <optgroup label="Sách dịch">
+          <option>Khuyến học</option>
+          <option selected>Khởi hành</option>
+          <option>Nhà giả kim</option>
+        </optgroup>
+        <optgroup label="Sách Việt">
+          <option>Trên đường băng</option>
+          <option selected>Đúng việc</option>
+        </optgroup>
+      </select></p>
+<hr>
+<p>Đính kèm tập tin</p>
+<form action="/client.php" method="POST" enctype="multipart/form-data">
+    <label>Gửi ảnh đại diện của bạn
+      <em>(tùy chọn)</em><br>
+      <input type="file" name="photo" size="28"></label>
+</form>
+
+
